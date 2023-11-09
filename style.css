@@ -40,7 +40,7 @@ header p {
   color: var(--color-text);
 }
 
-header > div {
+header .arrowButton {
   width: 6rem;
   margin: 3.5rem auto 9rem;
   padding-block: 3rem;
@@ -216,5 +216,62 @@ footer p {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  header .logo {
+    width: 60rem;
+    height: 60rem;
+  }
+
+  header h1 {
+    font-size: 5.8rem;
+    margin: 0;
+  }
+
+  header > div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  header p {
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+
+  header .arrowButton {
+    margin: inherit;
+    margin-top: 19rem;
+  }
+
+  .container {
+    max-width: 120rem;
+  }
+
+  main section {
+    flex-direction: row;
+  }
+
+  footer {
+    background-image: url(./assets/background.svg);
+    background-repeat: no-repeat;
+    background-position: top 0px right 0px;
+  }
+
+  footer section {
+    margin: inherit;
+  }
+
+  footer section form {
+    width: 50%;
   }
 }
