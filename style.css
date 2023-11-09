@@ -206,7 +206,7 @@ footer p {
 
 @keyframes move {
   50% {
-    transform: (30px);
+    transform: translateY(30px);
   }
 }
 
