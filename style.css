@@ -177,6 +177,12 @@ button {
   font-size: 1.4rem;
   font-weight: bold;
   color: #fff;
+
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #5a5783;
 }
 
 footer p {
@@ -186,4 +192,29 @@ footer p {
   font-size: 1.8rem;
   font-weight: 600;
   color: #fff;
+}
+
+.arrow {
+  animation: move;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.card img {
+  animation: girar 25s linear infinite;
+}
+
+@keyframes move {
+  50% {
+    transform: (30px);
+  }
+}
+
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
